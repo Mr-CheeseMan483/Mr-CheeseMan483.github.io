@@ -22,7 +22,7 @@
       }
         
      .gradient-text {
-            color: #f7f307; 
+            color: linear-gradient(45deg, #bbff29, #ffee03); 
             background-image: linear-gradient(45deg, #bbff29, #ffee03);
             -webkit-background-clip: text;
             background-clip: text;
@@ -33,9 +33,9 @@
             font-weight: bold;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 400px;
+            margin: 2px auto;
+            padding: 5px;
             border: 7px solid #06ba0f;
             border-radius: 80px; /* Rounded corners */
             background-color: #aafc1c; /* Semi-transparent background */
@@ -64,8 +64,8 @@
 
     
 <body>
-    <div class="container gradient-text animate__animated animate__bounceIn" style="animation-delay: 0.5s">
-        <h1 style="color: #dfff2b;">Your did it!</h1>
+    <div class="container gradient-text animate__animated animate__bounceIn">
+        <h1 style="animation-delay: 0.5s; gradient-text">Your did it!</h1>
     </div>
 </body>
 
