@@ -23,7 +23,7 @@
         }
       }
         
-      gradient-text {
+      .gradient-text {
   /* Fallback color for older browsers */
   color: #f3ec78; 
 
@@ -42,6 +42,15 @@
   font-size: 50px;
   font-family: "Arial Black", sans-serif;
 }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 6px double #ffffff;
+            border-radius: 25px; /* Rounded corners */
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -65,7 +74,9 @@
 
     
 <body>
-        <h1 class="animate__animated animate__bounceIn gradient-text" style="animation-delay: 0.5s"><span style="color: linear-gradient(90deg, red, blue);">Your did it!</span></h1>
+    <div class="animate__animated animate__bounceIn gradient-text" style="animation-delay: 0.5s">
+        <h1 style="color: linear-gradient(90deg, red, blue);">Your did it!</h1>
+    </div>
 </body>
 
 </html>
