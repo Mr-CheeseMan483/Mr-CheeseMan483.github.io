@@ -18,37 +18,24 @@
         h1 {
             text-align: center;
             text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
-            margin-top: 20%;
-            color: linear-gradient(90deg, red, blue);
+            color: linear-gradient(90deg, #bbff29, #ffee03);
         }
       }
         
-      .gradient-text {
-  /* Fallback color for older browsers */
-  color: #f3ec78; 
-
-  /* Apply the gradient as a background image */
-  background-image: linear-gradient(45deg, #f3ec78, #af4261);
-
-  /* Clip the background to the text shape */
-  background-clip: text;
-  -webkit-background-clip: text; /* Vendor prefix for compatibility */
-
-  /* Make the text transparent so the background shows through */
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent; /* Vendor prefix for compatibility */
-
-  /* Optional: Add a large font size to better display the effect */
-  font-size: 50px;
-  font-family: "Arial Black", sans-serif;
-}
+     .gradient-text {
+            background: linear-gradient(90deg, #bbff29, #ffee03);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 60px;
+            font-weight: bold;
+        }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            border: 6px double #ffffff;
+            border: 10px solid #06ba0f;
             border-radius: 25px; /* Rounded corners */
-            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+            background-color: linear-gradient(90deg, #03ffcd, #f7a71b); /* Semi-transparent background */
             text-align: center;
         }
     </style>
@@ -75,7 +62,7 @@
     
 <body>
     <div class="container animate__animated animate__bounceIn gradient-text" style="animation-delay: 0.5s">
-        <h1 style="color: linear-gradient(90deg, red, blue);">Your did it!</h1>
+        <h1 style="color: linear-gradient(90deg, #bbff29, #ffee03);">Your did it!</h1>
     </div>
 </body>
 
