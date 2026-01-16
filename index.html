@@ -5,7 +5,11 @@
     
     <style>
         body {
-            background-color: black;
+            background-image: url('background1.jpg');
+            /* Optional: Additional background properties */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-size: cover;       /* Stretches/shrinks the image to cover the whole element */
+            background-attachment: fixed; /* Fixes the image so it doesn't scroll with content */
             color: white;
             overflow-y: scroll;
             margin: 0;
@@ -15,7 +19,7 @@
             text-align: center;
             text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
             margin-top: 20%;
-            background: linear-gradient(90deg, red, blue);
+            color: linear-gradient(90deg, red, blue);
         }
       }
         
