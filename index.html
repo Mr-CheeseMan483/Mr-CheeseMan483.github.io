@@ -38,9 +38,9 @@
             max-width: 300px;
             margin: 1px auto;
             padding: 5px;
-            border: 7px solid #8ddb07;
+            border: 10px solid #9ef702;
             border-radius: 75px;
-            outline: 5px solid #02d10c;
+            outline: 6px solid #02d10c;
             outline-radius: 75px; /* Rounded corners */
             background-color: #aafc1c; /* Semi-transparent background */
             text-align: center;
@@ -54,6 +54,16 @@
 
   /* Include other formats for wider support */
 }
+
+        .outlined-text {
+  -webkit-text-stroke-width: 5px; /* Sets the outline width */
+  -webkit-text-stroke-color: #de007a; /* Sets the outline color */
+  /* Standard property for Firefox and other modern browsers, though -webkit prefix often works everywhere */
+  text-stroke-width: 5px; 
+  text-stroke-color: #de007a;
+  
+}
+        
     </style>
 </head>
 
@@ -78,8 +88,8 @@
 
     
 <body>
-    <div class="gradient-text container gradient-text animate__animated animate__bounceIn">
-        <h1 style="animation-delay: 0.5s; color: #fa079d; font-size: 30px; font-family: "Exo SemiBold";">Title4</h1>
+    <div class="outlined-text gradient-text container gradient-text animate__animated animate__bounceIn">
+        <h1 style="animation-delay: 0.5s; color: #fa079d; font-size: 30px; font-family: "Exo SemiBold";">Title5</h1>
     </div>
 </body>
 
