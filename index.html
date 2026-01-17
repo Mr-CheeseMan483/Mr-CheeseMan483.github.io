@@ -61,19 +61,25 @@
 }
 
         .containerbig {
-    max-width: 600px;
+    max-width: 900px;
     margin: 12px auto;
     padding: 12px;
-    background-color: linear-gradient(to right, #f57214, #1c86ff);
-    border: 3px solid #ffffff;
+    background-color: #1c86ff;
+    border: 3px solid #f57214;
     border-radius: 75px; /* Semi-transparent background */
     display: flex; /* Items side-by-side */
     /* display: flex; flex-direction: column; */ /* Items stacked vertically */
     gap: 10px; /* Space between items */
-   
 }
+        
 .container p, .container span {
     margin: 0; /* Remove default margins */
+}
+        .child {
+    flex: 1; /* This allows the child elements to grow and fill the space equally */
+    padding: 10px;
+    background-color: #ffffff; /* Example background color for visibility */
+    border: 1px solid #000; /* Example border for visibility */
 }
 
         
@@ -175,7 +181,7 @@ pointer-events: none;}
     
     <body>
     <div class="container2 gradient-text animate__animated animate__bounceIn">
-        <h1 style="animation-delay: 4.5s; color: #5e00ab; font-size: 12px; font-family: "Exo Bold";">Update 26</h1>
+        <h1 style="animation-delay: 4.5s; color: #5e00ab; font-size: 12px; font-family: "Exo Bold";">Update 27</h1>
     </div>
         
 </body>
@@ -183,14 +189,14 @@ pointer-events: none;}
     <div class="containerbig">
     <nav>
         <ul>
-            <li><h1 style="font-size: 15px; font-family: "Exo Bold";"><a href="index.html">Home</h1></a></li>
-            <li><a href="red.html">red</a></li>
-            <li><a href="orange.html">orange</a></li>
-            <li><a href="yellow.html">yellow</a></li>
-            <li><a href="green.html">green</a></li>
-            <li><a href="blue.html">blue</a></li>
-            <li><a href="purple.html">purple</a></li>
-            <li><a href="pink.html">pink</a></li>
+            <li><div class="child"><h1 style="font-size: 15px; font-family: "Exo Bold";"><a href="index.html">Home</h1></a></div></li>
+            <li><div class="child"><a href="red.html">red</a></div></li>
+            <li><div class="child"><a href="orange.html">orange</a></div></li>
+            <li><div class="child"><a href="yellow.html">yellow</a></div></li>
+            <li><div class="child"><a href="green.html">green</a></div></li>
+            <li><div class="child"><a href="blue.html">blue</a></div></li>
+            <li><div class="child"><a href="purple.html">purple</a></div></li>
+            <li><div class="child"><a href="pink.html">pink</a></div></li>
 
         </ul>
     </nav>
