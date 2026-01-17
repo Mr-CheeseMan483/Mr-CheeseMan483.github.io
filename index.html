@@ -55,13 +55,28 @@
 
   /* Include other formats for wider support */
 }
-        @keyframes slideIn {
-    from {
-        background-position: -100% 100%;
-    }
-    to {
-        background-position: center;
-    }
+        
+        /* Define the animation named 'slideinleft' */
+@keyframes slideinleft {
+  from {
+    transform: translateX(-100%, -100%); /* Start off-screen to the left */
+    opacity: 0; /* Optional: start as invisible */
+  }
+  to {
+    transform: translateX(0); /* End at original position */
+    opacity: 1; /* Optional: end as visible */
+  }
+}
+
+/* Apply the animation to the element */
+.slide-in-box {
+  animation-name: slideinleft;
+  animation-duration: 3s; /* How long the animation takes */
+  animation-timing-function: ease-out; /* Speed curve */
+  animation-fill-mode: forwards; /* Keep the end state */
+  /* Optional initial state before animation runs */
+  transform: translateX(-100%, -100%);
+  opacity: 0;
 }
 
 body {
@@ -89,18 +104,16 @@ body {
 
 
 
-
  
 
   <div style="float:  ; max-width: 200px; height: auto; position: fixed; left: 37px; top: 9px; z-index: 200;"><a href="https://alturl.com/p749b"><img src="https://autism.crd.co/assets/images/gallery03/45050ba7_original.gif?v=69d6a439" alt="cat kittycat"/></a></div>
   
 
 
-
     
 <body>
     <div class="outlined-text gradient-text container gradient-text animate__animated animate__bounceIn">
-        <h1 style="animation-delay: 0.5s; color: #fa079d; font-size: 30px; font-family: "Exo Bold";">Update13</h1>
+        <h1 style="animation-delay: 0.5s; color: #fa079d; font-size: 30px; font-family: "Exo Bold";">Update14</h1>
     </div>
 </body>
 
