@@ -63,15 +63,19 @@
   text-stroke-width: 2px; 
   text-stroke-color: #c90270;
 }
-        .slide-in {
+        .sliding-image {
             position: absolute;
-            bottom: -100px; /* Start off-screen */
-            left: 0;
-            width: 100px; /* Adjust as needed */
-            transition: bottom 1s ease-in-out;
+            bottom: 0;
+            left: -100px;
+            animation: slideIn 3s forwards;
         }
-        .slide-in.show {
-            bottom: 0; /* Slide into view */
+        @keyframes slideIn {
+            0% {
+                left: -100px;
+            }
+            100% {
+                left: 0;
+            }
         }
         
     </style>
@@ -94,13 +98,13 @@
 
 <style>* {cursor: url(https://ani.cursors-4u.net/others/oth-9/oth904.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2018/02/08/crossbone-guitar-pick.html" target="_blank" title="Crossbone Guitar Pick"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Crossbone Guitar Pick" style="position:absolute; top: 0px; right: 0px;" /></a>
 
-    <img src="metro1.png" alt="Sliding Image" class="slide-in" id="slidingImage">
 
+    <img src="metro1.png" alt="Sliding Image" class="sliding-image">
 
     
 <body>
     <div class="outlined-text gradient-text container gradient-text animate__animated animate__bounceIn">
-        <h1 style="animation-delay: 0.5s; color: #fa079d; font-size: 30px; font-family: "Exo Bold";">Update10</h1>
+        <h1 style="animation-delay: 0.5s; color: #fa079d; font-size: 30px; font-family: "Exo Bold";">Update11</h1>
     </div>
 </body>
 
