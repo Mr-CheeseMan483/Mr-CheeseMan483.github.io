@@ -67,7 +67,8 @@
     justify-content: center; /* Centers the content horizontally */
     align-items: center;     /* Centers the content vertically if needed */
     max-width: 900px;
-    margin: 9px auto;
+    max-height: 21px;
+    margin: 6px auto;
     padding: 6px;
     background-color: #f50223;
     border: 7px solid #bf021b;
@@ -76,6 +77,9 @@
     display: flex; /* Items side-by-side */
     flex-direction: row;/* display: flex; flex-direction: column; */ /* Items stacked vertically */
     gap: 10px; /* Space between items */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
 }
         
 .container p, .container span {
@@ -122,7 +126,7 @@
 </head>
 
 <body>
-<div class="containerbig">
+  <div class="containerbig animate__animated animate__bounceIn animation-delay: 5s;">
     <nav>
         <ul>
             <a href="index.html"><span style="color: #ffffff; font-size: 15px; font-family: "Exo Bold";">Home</span></a><span style="color: #f50223">___</span><a href="red.html"><span style="color: #bf021b; font-size: 15px; font-family: "Exo Bold";">Red</span></a><span style="color: #f50223">___</span><a href="orange.html"><span style="color: #000000; font-size: 15px; font-family: "Exo Bold";">Orange</span></a><span style="color: #f50223">___</span><a href="yellow.html"><span style="color: #000000; font-size: 15px; font-family: "Exo Bold";">Yellow</span></a><span style="color: #f50223">___</span><a href="green.html"><span style="color: #000000; font-size: 15px; font-family: "Exo Bold";">Green</span></a><span style="color: #f50223">___</span><a href="blue.html"><span style="color: #000000; font-size: 15px; font-family: "Exo Bold";">Blue</span></a><span style="color: #f50223">___</span><a href="purple.html"><span style="color: #000000; font-size: 15px; font-family: "Exo Bold";">Purple</span></a><span style="color: #f50223">___</span><a href="pink.html"><span style="color: #000000; font-size: 15px; font-family: "Exo Bold";">Pink</span></a>
