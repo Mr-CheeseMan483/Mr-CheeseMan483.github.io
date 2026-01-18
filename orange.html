@@ -60,18 +60,29 @@
     align-items: center; /* Vertically centers the content */
     justify-content: center; /* Horizontally centers the content */
 }
-         .containerbig {
-    max-width: 600px;
-    margin: 12px auto;
-    padding: 12px;
-    background-color: linear-gradient(to right, #f57214, #1c86ff);
-    border: 3px solid #ffffff;
+        .containerbig {
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center;     /* Centers the content vertically if needed */
+    max-width: 900px;
+    max-height: 21px;
+    margin: 6px auto;
+    padding: 6px;
+    background-color: #03eeff;
+    border: 7px solid #fc8a26;
+    outline: 6px solid #fc6b03;
     border-radius: 75px; /* Semi-transparent background */
     display: flex; /* Items side-by-side */
-    /* display: flex; flex-direction: column; */ /* Items stacked vertically */
+    flex-direction: row;/* display: flex; flex-direction: column; */ /* Items stacked vertically */
     gap: 10px; /* Space between items */
-   
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
 }
+        
 .container p, .container span {
     margin: 0; /* Remove default margins */
 }
@@ -116,17 +127,10 @@
 </head>
 
 <body>
- <div class="containerbig">
+  <div class="containerbig animate__animated animate__bounceIn animation-delay: 5s;">
     <nav>
         <ul>
-            <li><h1 style="font-size: 15px; font-family: "Exo Bold";"><a href="index.html">Home</h1></a></li>
-            <li><a href="red.html">red</a></li>
-            <li><a href="orange.html">orange</a></li>
-            <li><a href="yellow.html">yellow</a></li>
-            <li><a href="green.html">green</a></li>
-            <li><a href="blue.html">blue</a></li>
-            <li><a href="purple.html">purple</a></li>
-            <li><a href="pink.html">pink</a></li>
+            <a href="index.html"><span style="color: #ffffff; font-size: 15px; font-family: "Exo Bold";">Home</span></a><span style="color: #03eeff">___</span><a href="red.html"><span style="color: #ff0324; font-size: 15px; font-family: "Exo Bold";">Red</span></a><span style="color: #03eeff">___</span><a href="orange.html"><span style="color: #ff7a14; font-size: 15px; font-family: "Exo Bold";">Orange</span></a><span style="color: #03eeff">___</span><a href="yellow.html"><span style="color: #fae102; font-size: 15px; font-family: "Exo Bold";">Yellow</span></a><span style="color: #03eeff">___</span><a href="green.html"><span style="color: #24cc06; font-size: 15px; font-family: "Exo Bold";">Green</span></a><span style="color: #03eeff">___</span><a href="blue.html"><span style="color: #054df5; font-size: 15px; font-family: "Exo Bold";">Blue</span></a><span style="color: #03eeff">___</span><a href="purple.html"><span style="color: #9e17ff; font-size: 15px; font-family: "Exo Bold";">Purple</span></a><span style="color: #03eeff">___</span><a href="pink.html"><span style="color: #fc23d1; font-size: 15px; font-family: "Exo Bold";">Pink</span></a>
 
         </ul>
     </nav>
