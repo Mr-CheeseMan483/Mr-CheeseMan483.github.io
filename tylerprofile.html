@@ -34,19 +34,21 @@
             font-family: "Exo Bold", Arial Black;
             font-weight: bold;
         }
-       .container {
+      
+        .container {
     max-width: 300px;
     max-height: 300px;
     margin: 4px auto;
     padding: 3px;
-    background-color: rgba(56, 219, 255, 0.1) /* Semi-transparent background */
+    background-color: rgba(56, 219, 255, 0.1); /* Semi-transparent background */
     border: 2px solid #38dbff;
     border-radius: 20px;
-    box-shadow: 0 0 10px 10px rgba(56, 219, 255, 0.5);/* Semi-transparent background */
+    box-shadow: 0 0 10px 10px rgba(56, 219, 255, 0.5); /* Semi-transparent background */
     display: flex;
     align-items: center; /* Vertically centers the content */
     justify-content: center; /* Horizontally centers the content */
     float: right; /* Aligns the container to the right */
+    margin-right: 20px; /* Adds space from the right border */
 }
         
         .container2 {
@@ -92,6 +94,10 @@
        src: url('/exo/Exo-Bold.otf') format('otf');
 
   /* Include other formats for wider support */
+}
+        @keyframes spin{
+  from{ transform:rotate(0deg); }
+  to{ transform:rotate(-360deg); }
 }
 
         .outlined-text {
@@ -140,7 +146,9 @@
 
 
 <div style="text-align: center;">
-    <img src="tyler1.jpg" alt="tyler" style="height: 300px; width: 300px; border: 5px #38dbff; border-radius: 100px; box-shadow: 0 0 20px 10px rgba(56, 219, 255, 0.5); margin: 20px;">
+    <div style="float: left; margin-right: 20px;">
+        <img src="tyler1.jpg" alt="tyler" style="height: 200px; width: 200px; border: 5px #38dbff; animation: spin 7s infinite linear; border-radius: 120px; box-shadow: 0 0 20px 10px rgba(56, 219, 255, 0.5);">
+    </div> 
     <h3 style="margin-top: 10px; color: #231f82">Tyler Rossiter</h3>
 </div>
 
