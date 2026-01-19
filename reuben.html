@@ -100,6 +100,16 @@
   to{ transform:rotate(-360deg); }
 }
 
+@keyframes breath {
+  from {
+    animation-timing-function: ease-out;
+  }
+  to {
+    transform: scale(1.25) translateY(-5px) perspective(1px);
+    animation-timing-function: ease-in-out;
+  }
+}
+        
         .outlined-text {
   -webkit-text-stroke-width: 2px; /* Sets the outline width */
   -webkit-text-stroke-color: #c90270; /* Sets the outline color */
@@ -181,7 +191,7 @@ pointer-events: none;}
 
 </style>
 
-<div style="text-align: center;">
+<div style="text-align: center; letter-animation="breath";">
         <img src="reuben1.png" alt="tyler" style="height: 200px; width: 200px; border: 5px #FF724C; animation: spin 7s infinite linear; border-radius: 120px; box-shadow: 0 0 15px 10px rgba(255, 114, 76, 0.3); float: left; margin-left: 20px;">
     <h3 style="margin-top: 10px; color: #fc28b2; text-shadow: 0 0 2px 2px rgba(255, 114, 76, 0.5); font-family: "Loaded";">Reuben Sweetman</h3>
 </div>
